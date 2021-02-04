@@ -19,7 +19,7 @@ def main():
     print(logo)
     print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.MAGENTA}[?] {Style.BRIGHT + Fore.WHITE}Hangi takip etme yöntemini kullanmak istersiniz:{Style.RESET_ALL}")
     tmp = (11 * " ")
-    print(f"{Style.RESET_ALL}{tmp}{Style.BRIGHT + Fore.MAGENTA}1 > {Style.RESET_ALL + Fore.WHITE}Hastag kullanarak takipçi bulma.{Style.RESET_ALL}")
+    print(f"{Style.RESET_ALL}{tmp}{Style.BRIGHT + Fore.MAGENTA}1 > {Style.RESET_ALL + Fore.WHITE}Hashtag kullanarak takipçi bulma.{Style.RESET_ALL}")
     print(f"{Style.RESET_ALL}{tmp}{Style.BRIGHT + Fore.MAGENTA}2 > {Style.RESET_ALL + Fore.WHITE}Kullanıcıdan takipçi bulma.{Style.RESET_ALL}")
     print(f"{Style.RESET_ALL}")
     print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.MAGENTA}[>] {Style.BRIGHT + Fore.WHITE}Seçiminiz:{Style.RESET_ALL} ", end="")
@@ -80,10 +80,10 @@ def main():
         exit(0)
 
     if (method == "1"):
-        print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.MAGENTA}[?] {Style.BRIGHT + Fore.WHITE}Aramak istediğiniz hastagleri giriniz ('#' siz ve hashtagler arası virgül koyunuz örnek: kaya,musti):{Style.RESET_ALL} ", end="")
+        print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.MAGENTA}[?] {Style.BRIGHT + Fore.WHITE}Aramak istediğiniz hashtagleri giriniz ('#' siz ve hashtagler arası virgül koyunuz örnek: kaya,musti):{Style.RESET_ALL} ", end="")
         hashtags = input()
         hashtag_list = hashtags.strip().split(",")
-        print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{len(hashtag_list)} adet hastag aranacak!{Style.RESET_ALL}")
+        print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{len(hashtag_list)} adet hashtag aranacak!{Style.RESET_ALL}")
         
         for hashtag in hashtag_list:
             if (hashtag.strip() == ""):
