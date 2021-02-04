@@ -80,7 +80,7 @@ def main():
         exit(0)
 
     if (method == "1"):
-        print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.MAGENTA}[?] {Style.BRIGHT + Fore.WHITE}Aramak istediğiniz hastagleri giriniz ('#' siz ve hastagler arası virgül koyunuz):{Style.RESET_ALL} ", end="")
+        print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.MAGENTA}[?] {Style.BRIGHT + Fore.WHITE}Aramak istediğiniz hastagleri giriniz ('#' siz ve hashtagler arası virgül koyunuz örnek: kaya,musti):{Style.RESET_ALL} ", end="")
         hashtags = input()
         hashtag_list = hashtags.strip().split(",")
         print(f"{Style.RESET_ALL}{get_time()} {Style.BRIGHT + Fore.GREEN}[+] {Style.BRIGHT + Fore.WHITE}{len(hashtag_list)} adet hastag aranacak!{Style.RESET_ALL}")
